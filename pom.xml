@@ -56,12 +56,12 @@
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
-<!--                    <execution>-->
-<!--                        <id>jdfc-report</id>-->
-<!--                        <goals>-->
-<!--                            <goal>create-report</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
+                    <execution>
+                        <id>jdfc-report</id>
+                        <goals>
+                            <goal>create-report</goal>
+                        </goals>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
