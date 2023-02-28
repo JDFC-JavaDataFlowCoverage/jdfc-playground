@@ -10,6 +10,6 @@ public class SimpleIntegerTest {
     public void testFoo() {
         final SimpleInteger simpleInteger = new SimpleInteger();
         final int result = simpleInteger.foo();
-        assertEquals(-14, result);
+        assertEquals( -14, result);
     }
 }
