@@ -12,3 +12,10 @@ Install JDFC IntelliJ plugin:
 - Select the gear wheel at the top of the window
 - Select "Install Plugin from Disk"
 - In the project select "external_jars/jdfc-intellij-plugin-1.0-SNAPSHOT.jar"
+
+Executing the analysis:
+- Run "mvn clean install"
+
+Open a class file via JDFC IntelliJ Plugin:
+- Prerequisite: Test file is open
+- Select "JDFC" -> "Open class file"
