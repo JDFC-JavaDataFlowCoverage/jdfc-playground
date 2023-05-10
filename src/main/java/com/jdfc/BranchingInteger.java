@@ -31,4 +31,10 @@ public class BranchingInteger {
         }
         return result;
     }
+
+    public int test() {
+        // int x 
+        //
+        // x = private method call where x is not redefined
+    }
 }
