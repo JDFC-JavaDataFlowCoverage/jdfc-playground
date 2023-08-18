@@ -30,25 +30,25 @@
                 <artifactId>pitest-maven</artifactId>
                 <version>1.11.0</version>
             </plugin>
-                <plugin>
-                    <groupId>com.jdfc</groupId>
-                    <artifactId>jdfc-maven-plugin</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                    <executions>
-                        <execution>
-                            <id>jdfc-agent</id>
-                            <goals>
-                                <goal>prepare-agent</goal>
-                            </goals>
-                        </execution>
-                        <execution>
-                            <id>jdfc-report</id>
-                            <goals>
-                                <goal>create-report</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
+            <plugin>
+                <groupId>com.jdfc</groupId>
+                <artifactId>jdfc-maven-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>jdfc-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jdfc-report</id>
+                        <goals>
+                            <goal>create-report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
 <!--            <plugin>-->
 <!--                <groupId>org.jacoco</groupId>-->
 <!--                <artifactId>jacoco-maven-plugin</artifactId>-->
@@ -69,15 +69,23 @@
 <!--                    </execution>-->
 <!--                </executions>-->
 <!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.9.0</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/com/jdfc/apache/**</exclude>
+                        <exclude>**/com/jdfc/some/**</exclude>
+                        <exclude>**/com/jdfc/types/*</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.surefire</groupId>
-                    <artifactId>common-java5</artifactId>
-                    <version>3.0.0-M5</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
     </build>
 </project>

@@ -1,0 +1,52 @@
+Class: com/jdfc/BranchingIntegerMethod: callFoo: (I)I;{
+  0 => LocalVariable(name=this, descriptor=Lcom/jdfc/BranchingInteger;, signature=null, index=0)
+  1 => LocalVariable(name=bar, descriptor=I, signature=null, index=1)
+}
+{
+  0 => CFGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=bar, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true)] | uses []
+  1 => CFGNode: 0 ALOAD com/jdfc/BranchingInteger callFoo: (I)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=0, lineNumber=32, isDefinition=false, isCovered=false)]
+  2 => CFGNode: 1 ALOAD com/jdfc/BranchingInteger callFoo: (I)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=1, lineNumber=32, isDefinition=false, isCovered=false)]
+  3 => CFGCallNode: 2 INVOKEVIRTUAL com/jdfc/BranchingInteger callFoo: (I)I; com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+Class: com/jdfc/BranchingIntegerMethod: loop: ()I;{
+  0 => CFGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=false), ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=false)] | uses []
+  1 => CFGNode: 0 ICONST_0 com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  2 => CFGNode: 1 ISTORE com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=1, lineNumber=36, isDefinition=true, isCovered=false)] | uses []
+  3 => CFGNode: 2 ICONST_0 com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  4 => CFGNode: 3 ISTORE com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=3, lineNumber=37, isDefinition=true, isCovered=false)] | uses []
+  5 => CFGNode: 4 UNKNOWN_OPCODE com/jdfc/BranchingInteger loop: ()I; (2 preds, 1 succs) | definitions [] | uses []
+  6 => CFGNode: 5 ILOAD com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=5, lineNumber=37, isDefinition=false, isCovered=false)]
+  7 => CFGNode: 6 ICONST_3 com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  8 => CFGNode: 7 IF_ICMPGE com/jdfc/BranchingInteger loop: ()I; (1 preds, 2 succs) | definitions [] | uses []
+  9 => CFGNode: 8 IINC com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=8, lineNumber=38, isDefinition=true, isCovered=false)] | uses [ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=8, lineNumber=38, isDefinition=true, isCovered=false)]
+  10 => CFGNode: 9 IINC com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=9, lineNumber=37, isDefinition=true, isCovered=false)] | uses [ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=9, lineNumber=37, isDefinition=true, isCovered=false)]
+  11 => CFGNode: 10 GOTO com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  12 => CFGNode: 11 UNKNOWN_OPCODE com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  13 => CFGNode: 12 ILOAD com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=12, lineNumber=40, isDefinition=false, isCovered=false)]
+  14 => CFGNode: 13 IRETURN com/jdfc/BranchingInteger loop: ()I; (1 preds, 1 succs) | definitions [] | uses []
+  15 => CFGExitNode: -2147483648 UNKNOWN_OPCODE (1 preds, 0 succs) | definitions [] | uses []
+
+ReturnSiteNode
+  4 => CFGNode: 3 ILOAD com/jdfc/BranchingInteger callFoo: (I)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=bar, descriptor=I, instructionIndex=3, lineNumber=32, isDefinition=false, isCovered=false)]
+  5 => CFGNode: 4 LDC com/jdfc/BranchingInteger callFoo: (I)I; (1 preds, 1 succs) | definitions [] | uses []
+  6 => CFGCallNode: 5 INVOKEVIRTUAL com/jdfc/BranchingInteger callFoo: (I)I; com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+Class: com/jdfc/BranchingIntegerMethod: foo: (IILjava/lang/String;)I;{
+  0 => CFGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=y, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=z, descriptor=Ljava/lang/String;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true)] | uses []
+  1 => CFGNode: 0 GETSTATIC com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  2 => CFGNode: 1 ALOAD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=z, descriptor=Ljava/lang/String;, instructionIndex=1, lineNumber=23, isDefinition=false, isCovered=false)]
+  3 => CFGNode: 2 INVOKEVIRTUAL com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  4 => CFGNode: 3 ILOAD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=3, lineNumber=24, isDefinition=false, isCovered=false)]
+  5 => CFGNode: 4 ILOAD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=y, descriptor=I, instructionIndex=4, lineNumber=24, isDefinition=false, isCovered=false)]
+  6 => CFGNode: 5 IF_ICMPLE com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 2 succs) | definitions [] | uses []
+  7 => CFGNode: 6 ILOAD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=6, lineNumber=25, isDefinition=false, isCovered=false)]
+  8 => CFGNode: 7 IRETURN com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  9 => CFGNode: 8 UNKNOWN_OPCODE com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  10 => CFGNode: 9 ILOAD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=9, lineNumber=27, isDefinition=false, isCovered=false)]
+  11 => CFGNode: 10 ICONST_1 com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  12 => CFGNode: 11 IADD com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  13 => CFGNode: 12 IRETURN com/jdfc/BranchingInteger foo: (IILjava/lang/String;)I; (1 preds, 1 succs) | definitions [] | uses []
+  14 => CFGExitNode: -2147483648 UNKNOWN_OPCODE (2 preds, 0 succs) | definitions [] | uses []
+
+ReturnSiteNode
+  7 => CFGNode: 6 IRETURN com/jdfc/BranchingInteger callFoo: (I)I; (1 preds, 1 succs) | definitions [] | uses []
+  8 => CFGExitNode: -2147483648 UNKNOWN_OPCODE (1 preds, 0 succs) | definitions [] | uses []
+}}

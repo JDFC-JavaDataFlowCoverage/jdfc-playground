@@ -1,0 +1,52 @@
+Class: com/jdfc/BranchingIntegerMethod: callFoo: (I)I;{
+  0 => LocalVariable(name=this, descriptor=Lcom/jdfc/BranchingInteger;, signature=null, index=0)
+  1 => LocalVariable(name=bar, descriptor=I, signature=null, index=1)
+}
+{
+  0 => SGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 0 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=bar, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true)] | uses []
+  1 => SGNode: 0 ALOAD (0 preds, 0 succs) | definitions [] | uses [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=0, lineNumber=32, isDefinition=false, isCovered=false)]
+  2 => SGNode: 1 ALOAD (0 preds, 0 succs) | definitions [] | uses [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=1, lineNumber=32, isDefinition=false, isCovered=false)]
+  3 => SGCallNode: 2 INVOKEVIRTUAL (0 preds, 0 succs) | definitions [] | uses []
+
+  4 => SGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=false), ProgramVariable(owner=null, name=i, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=false)] | uses []
+  5 => SGNode: 0 ICONST_0 (1 preds, 1 succs) | definitions [] | uses []
+  6 => SGNode: 1 ISTORE (1 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=result, descriptor=I, instructionIndex=1, lineNumber=36, isDefinition=true, isCovered=false)] | uses []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  7 => SGEntryNode: -2147483648 UNKNOWN_OPCODE (0 preds, 1 succs) | definitions [ProgramVariable(owner=null, name=this, descriptor=Lcom/jdfc/BranchingInteger;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=y, descriptor=I, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true), ProgramVariable(owner=null, name=z, descriptor=Ljava/lang/String;, instructionIndex=-2147483648, lineNumber=-2147483648, isDefinition=true, isCovered=true)] | uses []
+  8 => SGNode: 0 GETSTATIC (1 preds, 1 succs) | definitions [] | uses []
+  9 => SGNode: 1 ALOAD (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=z, descriptor=Ljava/lang/String;, instructionIndex=1, lineNumber=23, isDefinition=false, isCovered=false)]
+  10 => SGNode: 2 INVOKEVIRTUAL (1 preds, 1 succs) | definitions [] | uses []
+  11 => SGNode: 3 ILOAD (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=3, lineNumber=24, isDefinition=false, isCovered=false)]
+  12 => SGNode: 4 ILOAD (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=y, descriptor=I, instructionIndex=4, lineNumber=24, isDefinition=false, isCovered=false)]
+  13 => SGNode: 5 IF_ICMPLE (1 preds, 2 succs) | definitions [] | uses []
+  14 => SGNode: 6 ILOAD (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=6, lineNumber=25, isDefinition=false, isCovered=false)]
+  15 => SGNode: 7 IRETURN (1 preds, 1 succs) | definitions [] | uses []
+  16 => SGNode: 8 UNKNOWN_OPCODE (1 preds, 1 succs) | definitions [] | uses []
+  17 => SGNode: 9 ILOAD (1 preds, 1 succs) | definitions [] | uses [ProgramVariable(owner=null, name=x, descriptor=I, instructionIndex=9, lineNumber=27, isDefinition=false, isCovered=false)]
+  18 => SGNode: 10 ICONST_1 (1 preds, 1 succs) | definitions [] | uses []
+  19 => SGNode: 11 IADD (1 preds, 1 succs) | definitions [] | uses []
+  20 => SGNode: 12 IRETURN (1 preds, 1 succs) | definitions [] | uses []
+  21 => SGExitNode: -2147483648 UNKNOWN_OPCODE (2 preds, 0 succs) | definitions [] | uses []
+
+  22 => SGReturnSiteNode: -2147483648 UNKNOWN_OPCODE (0 preds, 0 succs) | definitions [] | uses []
+  23 => SGNode: 6 IRETURN (0 preds, 0 succs) | definitions [] | uses []
+  24 => SGExitNode: -2147483648 UNKNOWN_OPCODE (0 preds, 0 succs) | definitions [] | uses []
+}
