@@ -1,21 +1,17 @@
 package com.jdfc;
 
-
-//import com.jdfc.some.path.to.SimpleInteger;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class CrashTestFacility {
 
-    int daysWithoutHumanInjury;
+    int daysWithoutHumanInjury = 1;
+
+    CrashTestDummy dummy = new CrashTestDummy("Bert", 1, 70);
 
     public CrashTestFacility() {
-        this.daysWithoutHumanInjury = 1;
     }
 
     public CrashTestFacility(int value) {
        this.daysWithoutHumanInjury = value;
+       this.dummy = new CrashTestDummy("Bill", 2, 100);
     }
 //
 //    public void requestHelpFromSystemSupport() {
@@ -32,6 +28,10 @@ public class CrashTestFacility {
 
     public int getDaysWithoutHumanInjury() {
         return daysWithoutHumanInjury;
+    }
+
+    public CrashTestDummy getDummy() {
+        return dummy;
     }
 
     //--- Array --------------------------------------------------------------------------------------------------------
