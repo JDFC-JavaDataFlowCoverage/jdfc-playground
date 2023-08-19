@@ -28,6 +28,13 @@ public class TestCrashTestFacility {
         assertEquals(1, result);
     }
 
+    @Test
+    public void test_getDaysWithoutHumanInjury2() {
+        final CrashTestFacility crashTestFacility = new CrashTestFacility(1);
+        int result = crashTestFacility.getDaysWithoutHumanInjury();
+        assertEquals(1, result);
+    }
+
 //    @Test
 //    public void test_createNewDefaultDummy() {
 //        final CrashTestFacility crashTestFacility = new CrashTestFacility();

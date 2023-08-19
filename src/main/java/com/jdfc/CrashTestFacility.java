@@ -8,7 +8,15 @@ import java.util.List;
 
 public class CrashTestFacility {
 
-    public int daysWithoutHumanInjury = 1;
+    int daysWithoutHumanInjury;
+
+    public CrashTestFacility() {
+        this.daysWithoutHumanInjury = 1;
+    }
+
+    public CrashTestFacility(int value) {
+       this.daysWithoutHumanInjury = value;
+    }
 //
 //    public void requestHelpFromSystemSupport() {
 //        // do nothing

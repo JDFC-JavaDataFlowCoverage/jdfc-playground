@@ -1,6 +1,6 @@
-package com.jdfc;
-
-public class CrashTestDummy {
+//package com.jdfc;
+//
+//public class CrashTestDummy {
 //    String name;
 //    int age;
 //    double weight;
@@ -34,4 +34,4 @@ public class CrashTestDummy {
 //    public void setWeight(double weight) {
 //        this.weight = weight;
 //    }
-}
+//}
