@@ -1,4 +1,4 @@
-package com.jdfc;
+package com.jdfc.generics;
 
 public class GenericContainer<T> {
     private T item;
