@@ -30,4 +30,31 @@ public class Recursion {
     public void anotherMethod(int n) {
         System.out.println("Another method called with value: " + n);
     }
+
+    public int addOne(int i) {
+        if (i < 100) {
+            i++;
+            return addTwo(i);
+        } else {
+            return i;
+        }
+    }
+
+    public int addTwo(int i) {
+        if (i < 100) {
+            i += 2;
+            return addThree(i);
+        } else {
+            return i;
+        }
+    }
+
+    public int addThree(int i) {
+        if (i < 100) {
+            i += 3;
+            return addOne(i);
+        } else {
+            return i;
+        }
+    }
 }
