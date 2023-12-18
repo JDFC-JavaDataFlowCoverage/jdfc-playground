@@ -1,7 +1,5 @@
 package com.jdfc.interprocedural;
 
-import org.checkerframework.checker.units.qual.C;
-
 public class Construct {
 
     public void callConstructor() {
