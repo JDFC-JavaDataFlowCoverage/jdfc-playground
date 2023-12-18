@@ -11,7 +11,7 @@ delete all directories despite .idea and src
 
 ### Checkout JDFC
 ```shell
-git checkout git@github.com:blochmat/jdfc.git
+git git@github.com:JDFC-JavaDataFlowCoverage/jdfc-playground.git
 ```
 
 ### Build JDFC and add it to local Maven Repository
